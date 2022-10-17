@@ -2,11 +2,11 @@
 
 <html lang="en">
 <head>
-  	<meta charset="utf-8">
+    <meta charset="UTF-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 
  	 <title>Dhruv Naik</title>
-	<link rel="shortcut icon" type="image/png" href="./favi.png"/
+	<link rel="shortcut icon" type="image/png" href="./favi.png"/>
 
  	 <meta name="description" content="A simple HTML5 Template for new projects.">
   	<meta name="author" content="SitePoint">
@@ -24,18 +24,33 @@
   	<link rel="stylesheet" href="./style.css">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-
+    <script src="index.js"></script>
 </head>
 
 <body>
   <!-- your content here... -->
 <div class="mainpage">
 	<h1>Dhruv Naik</h1>
-	<div class="links">
-		<a href="https://www.instagram.com/naikdhruvv/" class="fa fa-instagram"></a>  
-		<a href="mailto:thedhruvnaik@gmail.com" class="fa fa-envelope" aria-hidden="true"></a>
-	</div>
+        <div class="forms">
+            <script language="javascript">
+                function pasuser(form) { 
+        
+                    if (form.pass.value=="Isha") { location="webpage.html" } 
+                    else { alert("Wrong Password") } 
+                }
+            </script>
+            <form name="login">
+       
+                <input name="pass" size="12" type="password" id="textinput">
+                <div class="middle"><input value="Enter" onclick="pasuser(this.form)" type="button" id="inputbtn"></div>
+            </form>
+            
+        </div>
+        <div class="links">
+            <a href="https://www.instagram.com/naikdhruvv/" class="fa fa-instagram"></a>  
+            <a href="mailto:thedhruvnaik@gmail.com" class="fa fa-envelope" aria-hidden="true"></a>
+        </div>
 </div>
-  <script src="js/scripts.js"></script>
+
 </body>
 </html>
